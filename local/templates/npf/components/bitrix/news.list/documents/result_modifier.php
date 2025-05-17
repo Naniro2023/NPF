@@ -10,46 +10,13 @@ foreach ($arResult['ITEMS'] as $key => $item){
 	// определяю тип иконки классом битрикс 
 	$file = new IO\File($arResult["ITEMS"][$key]["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"]["SRC"]);
 	$file_type = $file->getExtension();
-	$arResult["ITEMS"][$key]["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"]["ICON_SRC"] = $icons_folder.$file_type.'.svg';
 	//можно было просто через имя файла, чтобы не подключать класс
-	$file_type = '';
+	$file_name_array = explode('.', $arResult["ITEMS"][$key]["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"]["FILE_NAME"]);
+	$file_type = array_pop($file_name_array);
 	//echo '<pre>';
-	//print_r($item["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"]"FILE_NAME"]);
+	//print_r($file_type);
 	//echo '</pre>';
-	
+	// И так, и так работает
+	$arResult["ITEMS"][$key]["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"]["ICON_SRC"] = $icons_folder.$file_type.'.svg';
 } //endforeach
-
-
-
-
-
-//echo '<pre>';
-//print_r($arResult["ITEMS"];
-//print_r($arResult["ITEMS"]["0"]["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"]);
-//print_r($arItem["DISPLAY_PROPERTIES"]);
-//echo '</pre>';
-
-
-
-/*echo '<pre>';
-print_r($arResult["ITEMS"]);
-echo '</pre>';
-
-CModule::IncludeModule("fileman");
-CMedialib::Init(); 
-
-$arRes = CMedialib::GetTypes(array("image"), true);
-echo '<pre>';
-print_r($arRes);
-echo '</pre>';
-
-$arRes = CMedialibCollection::GetList(array('arFilter' => array('ACTIVE' => 'Y'), 'arOrder' => array('NAME' => 'ASC')));
-echo '<pre>';
-print_r($arRes);
-echo '</pre>';
-
-$arRes = CMedialibItem::GetList(array('arCollections' => array("1"), 'minId' => 3));
-echo '<pre>';
-print_r($arRes);
-echo '</pre>';*/
 ?>
