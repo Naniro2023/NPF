@@ -1,6 +1,6 @@
 <?
-echo '<pre>';
-print_r($arResult);
+/*echo '<pre>';
+print_r($arResult["ITEMS"]);
 echo '</pre>';
 
 CModule::IncludeModule("fileman");
@@ -19,5 +19,5 @@ echo '</pre>';
 $arRes = CMedialibItem::GetList(array('arCollections' => array("1"), 'minId' => 3));
 echo '<pre>';
 print_r($arRes);
-echo '</pre>';
+echo '</pre>';*/
 ?>
