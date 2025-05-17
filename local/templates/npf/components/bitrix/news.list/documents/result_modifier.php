@@ -1,4 +1,8 @@
 <?
+echo '<pre>';
+print_r($arResult);
+echo '</pre>';
+
 CModule::IncludeModule("fileman");
 CMedialib::Init(); 
 
