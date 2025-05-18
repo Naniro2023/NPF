@@ -7,7 +7,7 @@ foreach ($arResult['ITEMS'] as $key => $item){
 	$arResult["ITEMS"][$key]["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"]["FILE_SIZE"] = $file_size.' Кб';
 	// Определяю файл иконки 
 	$icons_folder = '/local/markup/dist/img/file_icons/'; // Чтобы менять папку, если что
-	// определяю тип иконки классом битрикс 
+	// определяю тип иконки битриксовской оберткой метода getExtension
 	$file = new IO\File($arResult["ITEMS"][$key]["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"]["SRC"]);
 	$file_type = $file->getExtension();
 	//можно было просто через имя файла, чтобы не подключать класс
