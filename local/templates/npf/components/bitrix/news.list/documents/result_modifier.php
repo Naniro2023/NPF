@@ -10,7 +10,7 @@ foreach ($arResult['ITEMS'] as $key => $item){
 	// определяю тип иконки битриксовской оберткой метода getExtension
 	$file = new IO\File($arResult["ITEMS"][$key]["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"]["SRC"]);
 	$file_type = $file->getExtension();
-	//можно было просто через имя файла, чтобы не подключать класс
+	//можно просто через имя файла, чтобы не подключать класс, разобрать имя на массив через точку и взять последний элемент
 	$file_name_array = explode('.', $arResult["ITEMS"][$key]["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"]["FILE_NAME"]);
 	$file_type = array_pop($file_name_array);
 	//echo '<pre>';
