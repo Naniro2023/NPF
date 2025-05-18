@@ -15,13 +15,10 @@ $this->setFrameMode(true);
 <?if($arParams["DISPLAY_TOP_PAGER"]):?>
 	<?=$arResult["NAV_STRING"]?><br />
 <?endif;?>
+
 <?foreach($arResult["ITEMS"] as $arItem):?>
 	<div class="files__box">
 		<div class="files__list ">
-			<?
-			$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
-			$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
-			?>
 			<div class="files__item">
 				<div class="files__icon">
 						<img src="<?echo $arItem["DISPLAY_PROPERTIES"]["FILE"]["FILE_VALUE"]["ICON_SRC"]?>" class="files__img" alt="<?echo $arItem["NAME"]?>">
