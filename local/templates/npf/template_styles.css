@@ -21167,3 +21167,370 @@ th {
 /* /local/markup/dist/css/style.bundle.css?1727846798327918 */
 /* /local/components/sng/app/templates/.default/style.css?17122269492289 */
 /* /local/components/sng/callback/templates/.default/style.css?1731309174908 */
+
+
+/* Start:/local/components/sng/hero/templates/.default/style.css?17353648465139*/
+.hero__item-red {
+    background: linear-gradient(to top right, #BA3516, #FF8D44);
+}
+.hero__item-red-dark {
+    background: linear-gradient(to top right, #BA3516, #a22323);
+}
+.hero__item-blue {
+    background: linear-gradient(to top right, #3F69A0, #85B9FC);
+}
+.hero__item-gold {
+    background: linear-gradient(to top right, #AE8839, #FFD06D);
+}
+.hero__item-green {
+    background: linear-gradient(to top right, #4FAB9E, #88FFDD);
+}
+.hero__item-azure {
+    background: linear-gradient(to top right, #00A4BF, #98F0FF);
+}
+.hero__item-green-blue {
+    background: linear-gradient(to top right, #0093E9, #80D0C7);
+}
+.hero__item-purple {
+    background: #E5E3FC;
+}
+.hero__item-emerald {
+    background: rgb(50, 165, 165);
+}
+.hero__item-grey {
+    background: rgb(120, 120, 120);
+}
+.hero__item-blue3 {
+    background-color: #0069aa;
+}
+.hero__item-blue4 {
+    background-color: #3764a0;
+}
+.hero__item-lotto {
+    background: #a6a09b;
+}
+.hero__link-lk {
+    color: #FFFFFF;
+    text-decoration: underline;
+    outline: none;
+}
+.hero__link-lk:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.hero__item-blue2 {
+    background-color: #3399cc;
+}
+.hero img {
+    margin: 0;
+}
+.hero__title {
+    font-weight: 700;
+}
+.hero__item-old-day {
+    background-image: url("/local/markup/dist/img/old_day_1.svg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.hero__item-9may {
+    background-image: url("/local/markup/dist/img/9may_map.png");
+    background-size: cover;
+    padding: 0 0 0 -10px;
+    height: 100%
+}
+.hero__item-fond_28 {
+    background-image: url("/local/markup/dist/img/zal_fond.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.hero__item-9may2023 {
+    background-image: url("/local/markup/dist/img/9may2023.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.hero__item-den_neft2023 {
+    background-image: url("/local/markup/dist/img/den_neft_2023.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.hero__item-12june2023 {
+    background-image: url("/local/markup/dist/img/12june2023.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.hero__item-grey-dark {
+    background: #575757;
+}
+.hero__item-denneft2022 .hero__img-denneft2022 {
+    width: 550px;
+    height: auto;
+    margin-bottom: -80px;
+}
+.hero__item-denneft2022 .hero__img-denneft2022-ellips {
+    width: 480px;
+    height: 200px;
+    margin-bottom: -80px;
+}
+
+.hero__img-45-years {
+    width: 550px;
+    height: auto;
+}
+
+.hero__title-number {
+    color: #F55748;
+    font-size: 190px !important;
+    line-height: 190px;
+}
+
+.hero__title-text {
+    color: #F55748;
+    margin-top: 20px;
+}
+
+.hero__description-dark {
+    color: #000000 !important;
+}
+
+.number__box {
+    display: flex;
+    gap: 9px;
+}
+
+.number__main {
+    display: flex;
+    gap: 3px;
+}
+
+.number__item {
+    background-color: #4fb0a4;
+    padding: 0 10px 0 10px;
+    color: white;
+    border-radius: 4px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Open Sans",sans-serif;
+}
+
+.number__item_red {
+    color: #eb5648;
+}
+
+.hero__item-new-year-2024 {
+    background-image: url("/local/markup/dist/img/new-years-2024.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+.hero__title-desktop {
+    display: block;
+}
+
+.hero__title-mobile {
+    display: none;
+}
+
+.hero__years {
+    height: 150px;
+}
+
+.hero__item-29-years {
+    background-image: url('/local/markup/dist/img/pic-draw-29-years-change.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.hero__description-author {
+    font-size: 13px !important;
+    position: absolute;
+    bottom: 10px;
+    right: -640px;
+    color: #2a2a2a !important;
+}
+
+@media (max-width: 1198px) {
+    .hero__years {
+        height: calc(100% - 25px);
+        display: block !important;
+    }
+    .hero__title-desktop {
+        display: none;
+    }
+    .hero__title-mobile {
+        display: block;
+    }
+    .hero__item-29-years {
+        background-image: none;
+        background: linear-gradient(90deg, #0069aa, #60a1ca);
+    }
+    .hero__description-author {
+        display: none;
+    }
+}
+
+.hero__item-pensioners {
+    background-image: url("/local/markup/dist/img/frame_2.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+@media (min-width: 1199px) {
+	.hero__title-pensioners {
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 1198px) {
+	.hero__item-pensioners {
+		background-image: none;
+		background: linear-gradient(45deg, rgb(42, 90, 177), rgb(84, 140, 214));
+	}
+}
+
+
+.hero__item-year-2025 {
+    background-image: url("/local/markup/dist/img/happy_new_year_banner.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.hero__item-year-2025 .hero__title {
+    margin-top: 30px;
+    margin-bottom: 10px !important;
+}
+
+@media (max-width: 1198px) {
+    .hero__item-year-2025 {
+        background-image: none;
+        background: linear-gradient(45deg, #1C6AA5, #5D9ED4);
+    }
+
+    .hero__item-year-2025 .hero__title .hero__img {
+        display: block;
+    }
+}
+
+@media (min-width: 1199px) {
+    .hero__item-year-2025 .hero__description {
+        max-width: 440px;
+    }
+}
+/* End */
+
+
+/* Start:/local/components/sng/contract/templates/.default/style.css?1617877994734*/
+.contract__hero {
+    display: none;
+    /*-webkit-animation: show 3s 1s;*/
+    /*-o-animation: show 3s 1s;*/
+    /*animation: show 3s 1s;*/
+}
+
+.contract__hero-active {
+    display: block;
+}
+
+.contract__hero-number {
+    opacity: 0;
+    -webkit-animation: show 4s 6s;
+    -o-animation: show 4s 6s;
+    animation: show 4s 6s;
+}
+
+.type_text .new {
+    opacity: 0;
+}
+
+.type_text .div_opacity {
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes show {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+/* End */
+/* /local/components/sng/hero/templates/.default/style.css?17353648465139 */
+/* /local/components/sng/contract/templates/.default/style.css?1617877994734 */
+
+
+
+/* Start:/local/components/sng/files/templates/.default/style.css?1710913169113*/
+.files__list--flex {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+}
+/* End */
+
+
+/* Start:/local/components/sng/banner/templates/.default/style.css?15846080931266*/
+.banner-1{
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px 0 rgba(85, 159, 210, 0.33);
+    background-color: #FFFFFF;
+    display: block;
+}
+
+.banner-1__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 20px;
+}
+
+.banner-1__img {
+    width: 52px;
+    height: 52px;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.banner-1__text {
+    font-size: 14px;
+    color: #6a6a6a;
+    font-family: 'Roboto', sans-serif;
+    width: 190px;
+}
+
+.banner-1:hover .banner-1__icon {
+    animation: pulse 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+    0% {
+        margin-left: 5px;
+    }
+    100% {
+        margin-left: 12px;
+    }
+}
+
+.banner-1__icon::before {
+    margin-left: 5px;
+    border-color: #32a5a5;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* End */
+/* /local/components/sng/files/templates/.default/style.css?1710913169113 */
+/* /local/components/sng/banner/templates/.default/style.css?15846080931266 */
