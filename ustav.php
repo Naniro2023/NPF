@@ -3,14 +3,12 @@ $APPLICATION->SetPageProperty("TITLE", "АО «НПФ «Сургутнефтег
 $APPLICATION->SetPageProperty("description", "Акционерное общество «Негосударственный пенсионный фонд «Сургутнефтегаз»");
 $APPLICATION->SetTitle("Устав");
 ?>
-
-
 <h3>Вывод документов через кастомный компонент npf:documents.list из Медиабиблиотеки</h3>
 <h6 class="files__title">Действующая редакция:</h6>
-<h6><?$APPLICATION->IncludeComponent(
-	"npf:documents.list",
-	".default",
-	Array(
+<?$APPLICATION->IncludeComponent(
+	"npf:documents.list", 
+	".default", 
+	array(
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
 		"AJAX_OPTION_HISTORY" => "N",
@@ -21,14 +19,15 @@ $APPLICATION->SetTitle("Устав");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"COLLECTION_ID" => "6",
-		"COMPONENT_TEMPLATE" => ".default",
 		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",
 		"DISPLAY_PICTURE" => "Y",
-		"DISPLAY_PREVIEW_TEXT" => "Y"
-	)
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
 );?><br>
- </h6>
+
 <h6 class="files__title">Архив:</h6>
  <?$APPLICATION->IncludeComponent(
 	"npf:documents.list",
@@ -49,8 +48,7 @@ $APPLICATION->SetTitle("Устав");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y"
 	)
-);?><br>
-
+);?>
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>
