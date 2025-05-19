@@ -1,5 +1,5 @@
 <?
-$MESS ['T_IBLOCK_DESC_LIST'] = "Список новостей";
-$MESS ['T_IBLOCK_DESC_LIST_DESC'] = "Список новостей из одного информационного блока.";
-$MESS ['T_IBLOCK_DESC_NEWS'] = "Статьи и новости";
+$MESS ['T_IBLOCK_DESC_LIST'] = "Список документов";
+$MESS ['T_IBLOCK_DESC_LIST_DESC'] = "Список документов из одной коллекции медиабиблиотеки.";
+$MESS ['T_IBLOCK_DESC_NEWS'] = "Документы";
 ?>
