@@ -2,7 +2,7 @@
 $APPLICATION->SetPageProperty("TITLE", "АО «НПФ «Сургутнефтегаз»");
 $APPLICATION->SetPageProperty("description", "Акционерное общество «Негосударственный пенсионный фонд «Сургутнефтегаз»");
 $APPLICATION->SetTitle("Устав");
-?><h3>Вывод документов через кастомный компонент npf:documents.list из Медиабиблиотеки</h3>
+?><h3>Вывод документов через кастомный компонент npf:documents.list из выбранной коллекции Медиабиблиотеки</h3>
 <h6 class="files__title">Действующая редакция:</h6>
  <?$APPLICATION->IncludeComponent(
 	"npf:documents.list",
